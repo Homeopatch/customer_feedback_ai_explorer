@@ -5,7 +5,7 @@ An end-to-end full-stack application that ingests customer feedback data, proces
 ## Project Structure
 
 ```
-assignment_riverflex/
+project_root/
 ├── backend/                # FastAPI backend
 │   ├── app/                # Application code
 │   │   ├── api/            # API endpoints
@@ -46,7 +46,8 @@ assignment_riverflex/
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd assignment_riverflex
+   cd customer_feedback_ai_explorer
+
    ```
 
 2. Create a `.env` file in the root directory:
@@ -61,7 +62,7 @@ assignment_riverflex/
 
 4. Build and start the containers:
    ```
-   docker-compose up -d --build
+   docker compose up -d --build
    ```
 
 5. Access the application:
@@ -124,8 +125,6 @@ To make this solution production-ready, consider the following enhancements:
 1. **Authentication & Authorization**: Implement user authentication and role-based access control.
 
 2. **Persistent Storage**: Replace the in-memory vector store with a persistent database like Pinecone, Weaviate, or Milvus.
-
-3. **Batch Processing**: Add support for processing large datasets in batches to avoid memory issues.
 
 4. **Caching**: Implement caching for common queries to reduce API costs and improve performance.
 
