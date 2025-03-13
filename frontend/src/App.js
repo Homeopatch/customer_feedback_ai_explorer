@@ -83,10 +83,10 @@ function App() {
                   <h2 className="text-xl font-semibold mb-4 flex items-center">
                     <svg className="h-5 w-5 mr-2 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="24" height="24" fill="none" />
-                      <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                      <path d="M8 12H8.01M12 12H12.01M16 12H16.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
                         stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    Search your feedback data
+                    Chat with your feedback data
                   </h2>
                   <ChatInterface />
                 </div>
@@ -99,7 +99,7 @@ function App() {
                     <path d="M7 16.0002C5.34315 16.0002 4 14.657 4 13.0002C4 11.7683 4.83481 10.7254 6 10.2677C6 7.91104 7.79086 6.00018 10 6.00018C12.2091 6.00018 14 7.91104 14 10.2677C15.1652 10.7254 16 11.7683 16 13.0002C16 14.657 14.6569 16.0002 13 16.0002M12 10.0002V20.0002M12 10.0002L15 13.0002M12 10.0002L9 13.0002"
                       stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <p className="text-gray-600 mb-2">Upload a CSV file to start exploring your customer feedback data.</p>
+                  <p className="text-gray-600 mb-2">Upload a CSV file to start chatting with your customer feedback data.</p>
                   <p className="text-sm text-gray-500">No data found in the vector store.</p>
                 </div>
               )}

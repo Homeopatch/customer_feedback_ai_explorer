@@ -105,17 +105,6 @@ function FileUpload({ onDataLoaded }) {
           </svg>
           Upload Customer Feedback
         </h2>
-
-        {vectorStoreStats && (
-          <div className="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-md text-sm flex items-center">
-            <svg className="h-4 w-4 mr-1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="24" height="24" fill="none" />
-              <path d="M19 8H5M19 8C20.1046 8 21 8.89543 21 10V18C21 19.1046 20.1046 20 19 20H5C3.89543 20 3 19.1046 3 18V10C3 8.89543 3.89543 8 5 8M19 8V6C19 4.89543 18.1046 4 17 4H7C5.89543 4 5 4.89543 5 6V8M10 12H14"
-                stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            <span className="font-medium">{vectorStoreStats.total_entries}</span> entries in database
-          </div>
-        )}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
