@@ -69,6 +69,10 @@ project_root/
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:8000
 
+6. Optionally, download the dataset from [here](https://www.kaggle.com/datasets/mehmetisik/amazon-review), 
+    and upload it via the frontend. Note that this dataset might take several minutes to be precessed first.
+
+
 ### Usage
 
 1. Upload a CSV file containing customer feedback data using the upload form.
