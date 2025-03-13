@@ -126,3 +126,10 @@ class VectorStore:
     def clear(self):
         """Clear the vector store and reset the index."""
         self.initialize_index()
+
+    def get_stats(self):
+        """Get statistics about the vector store."""
+        return {
+            "total_entries": len(self.texts),
+            "dimension": self.dimension
+        }

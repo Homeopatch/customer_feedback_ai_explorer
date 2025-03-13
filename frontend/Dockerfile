@@ -5,14 +5,17 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies including dev dependencies
+RUN npm install --include=dev
 
 # Copy the rest of the application
 COPY . .
 
+# Create the styles directory if it doesn't exist
+RUN mkdir -p src/styles
+
 # Build the application
-RUN npm run build
+RUN npm run build:css && npm run build
 
 # Production stage
 FROM nginx:alpine

@@ -26,7 +26,8 @@ async def root():
     return {"message": "Welcome to the Customer Feedback Explorer API"}
 
 # Import and include routers
-from app.api.endpoints import feedback, query
+from app.api.endpoints import feedback, query, status
 
 app.include_router(feedback.router, prefix="/api", tags=["feedback"])
 app.include_router(query.router, prefix="/api", tags=["query"])
+app.include_router(status.router, prefix="/api", tags=["status"])
